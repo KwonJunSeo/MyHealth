@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="7dp"
+    android:padding="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        android:background="#2a93d5">
+        <TextView
+            android:id="@+id/health_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="30dp"
+            android:text="1"/>
+
+        <TextView
+            android:id="@+id/health_name"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/health_id"
+            android:layout_marginLeft="20dp"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="벤치프레스"
+            />
+
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="가슴"
+            android:textSize="15dp"
+            android:textColor="#337CBC"
+            android:id="@+id/part"
+            android:background="@drawable/coner"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/checkbox"
+            android:layout_weight="8"
+            android:gravity="center|right"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:button="@null"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

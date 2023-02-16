@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1.5"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/top1" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/iconprofile" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="120dp"
+            android:hint="개발중"
+            android:id="@+id/name"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#135589" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="90dp"
+            android:text="신장"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#3ddad7" />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="120dp"
+            android:id="@+id/tall"
+            android:hint="개발중"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="#2a93d5" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="90dp"
+            android:text="체중"
+            android:textAlignment="center"
+            android:textStyle="bold"
+
+            android:textColor="#3ddad7" />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="120dp"
+            android:hint="개발중"
+            android:id="@+id/weight"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="#2a93d5" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="90dp"
+            android:text="BMI"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#3ddad7" />
+        <TextView
+            android:layout_width="60dp"
+            android:id="@+id/BMI"
+            android:layout_height="30dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="120dp"
+            android:hint="개발중"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="#2a93d5" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="0dp">
+
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="440px"
+            android:layout_height="650px"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="140px"
+            android:background="@drawable/main4" />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="60dp"
+            android:text="오늘의"
+            android:textColor="#135589"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="50dp"
+            android:text="운 동"
+            android:textSize="50px"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="380px"
+            android:layout_height="295px"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="140px"
+            android:layout_toRightOf="@+id/btn1"
+            android:background="@drawable/main5" />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="240dp"
+            android:text="식 단"
+            android:textSize="50px"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_width="380px"
+            android:layout_height="295px"
+            android:layout_toRightOf="@+id/btn1"
+            android:layout_below="@+id/btn2"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="60px"
+            android:background="@drawable/main6" />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="240dp"
+            android:text="일 지"
+            android:textSize="50px"
+            android:textColor="#FFFFFF" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:background="#135589"
+        >
+
+
+        <ImageButton
+            android:id="@+id/cal"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/iconcalendar" />
+
+        <ImageButton
+            android:id="@+id/food"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="115dp"
+            android:background="@drawable/iconfood" />
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="188dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/iconhome" />
+
+        <ImageButton
+            android:id="@+id/health"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="265dp"
+            android:background="@drawable/iconhealth" />
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/iconsettings" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

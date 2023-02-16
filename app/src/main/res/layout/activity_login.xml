@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500px">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:background="@drawable/top2" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1280px">
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/myhealth3" />
+
+        <ImageButton
+            android:layout_width="500px"
+            android:layout_height="100px"
+            android:background="@drawable/btn1"
+            android:id="@+id/btnLogin"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="100dp"/>
+        <TextView
+            android:layout_width="500px"
+            android:layout_height="100px"
+            android:text="정보 입력하기"
+            android:textSize="9pt"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="285dp"
+            android:layout_marginLeft="100dp" />
+        <!-- 메인가기 버튼
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn2_main"
+            android:text="메인가기"/>
+            -->
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:gravity="bottom">
+
+        <!-- 하단 메뉴 배경
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:background="@drawable/bottom2" />
+            -->
+
+    </RelativeLayout>
+
+</LinearLayout>

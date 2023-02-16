@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6FEFF"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:id="@+id/top"
+        android:background="@drawable/top3">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="115.5dp"
+            android:background="@drawable/iconprofile" />
+
+        <!-- User Name -->
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="115dp"
+            android:layout_marginLeft="115.5dp"
+            android:id="@+id/name"
+            android:text="USER"
+            android:textAlignment="center"
+            android:textColor="#135589"
+            android:textSize="6pt" />
+
+        <!-- Timer -->
+        <ImageButton
+            android:id="@+id/timer"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="240.5dp"
+            android:background="@drawable/iconclock" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="115dp"
+            android:layout_marginLeft="235.5dp"
+
+            android:text="Timer"
+            android:textAlignment="center"
+            android:textColor="#135589"
+            android:textSize="6pt" />
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/plus"
+        android:layout_marginBottom="73dp"
+        android:layout_marginRight="18dp"
+        android:backgroundTint="@color/white"/>
+
+    <ListView
+        android:id="@+id/select_health_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linear"
+        android:layout_below="@id/top"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="2dp"
+        android:background="#edfafd"
+        android:divider="@null" />
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#edfafd"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bottom2"
+
+            android:text="오늘 운동 완료!"
+            android:textColor="@color/white"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:id="@+id/btn"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

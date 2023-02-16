@@ -1,0 +1,327 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:background="@drawable/top1" >
+
+    <!-- User Profile -->
+
+
+    <!-- 성공한 세트 수 -->
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="완료 세트"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#3ddad7" />
+    <TextView
+        android:id="@+id/finishTV"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        android:hint="0 SET"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#2a93d5" />
+
+
+
+
+</RelativeLayout>
+<LinearLayout
+android:layout_marginTop="50dp"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:layout_height="wrap_content">
+
+<LinearLayout
+    android:id="@+id/timeCountSettingLV"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="30dp"
+    app:layout_constraintBottom_toTopOf="@+id/breakCountSettingLV"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수행시간"
+        android:textSize="20dp"
+        android:layout_marginRight="30dp"/>
+    <EditText
+        android:id="@+id/minuteET"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:hint="00"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text=":"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/startBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/secondET"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:hint="00"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/timeCountLV"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:visibility="gone"
+    android:layout_marginHorizontal="30dp"
+    app:layout_constraintBottom_toTopOf="@+id/breakCountSettingLV"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="운동시간"
+        android:textSize="20dp"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:id="@+id/minuteTV"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text=":"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/startBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/secondTV"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="50dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/breakCountSettingLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/startBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="휴식시간"
+            android:textSize="20dp"
+            android:layout_marginRight="30dp"/>
+        <EditText
+            android:id="@+id/minuteET_break"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="00"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text=":"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/startBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/secondET_break"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="00"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/breakCountLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/startBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="휴식시간"
+            android:textSize="20dp"
+            android:layout_marginRight="30dp"/>
+
+        <TextView
+            android:id="@+id/minuteTV_break"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text=":"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/startBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/secondTV_break"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
+
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="486dp">
+
+<ImageButton
+    android:id="@+id/startBtn"
+    android:layout_width="160.5dp"
+    android:layout_height="60dp"
+    android:layout_marginLeft="35dp"
+    android:background="@drawable/mainbutton1" />
+<TextView
+    android:layout_width="160.5dp"
+    android:layout_height="60dp"
+    android:layout_marginLeft="35dp"
+
+    android:text="운동 시작"
+    android:textSize="20dp"
+    android:textAlignment="center"
+    android:gravity="center"
+    android:textColor="#135589" />
+
+<ImageButton
+    android:id="@+id/startBtn2"
+    android:layout_width="160.5dp"
+    android:layout_height="60dp"
+    android:layout_marginLeft="20dp"
+    android:background="@drawable/mainbutton2"
+
+    android:layout_toRightOf="@+id/startBtn"/>
+<TextView
+    android:layout_width="160.5dp"
+    android:layout_height="60dp"
+    android:layout_marginLeft="20dp"
+
+    android:text="휴식 시작"
+    android:textSize="20dp"
+    android:textAlignment="center"
+    android:gravity="center"
+
+    android:layout_toRightOf="@+id/startBtn"/>
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_height="60dp"
+        android:layout_width="200dp"
+        android:text="타이머 초기화"
+        android:textSize="20dp"
+        android:textColor="#0F3D45"
+        android:background="@drawable/mainbutton3"
+        android:gravity="center"
+        android:id="@+id/reset_btn"/>
+
+</RelativeLayout>
+
+
+
+
+    </LinearLayout>

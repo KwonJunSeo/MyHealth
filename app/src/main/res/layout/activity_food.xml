@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/white" >
+
+
+
+    <!-- 상단 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="165.5dp"
+
+            android:background="@drawable/iconprofile" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginLeft="165.5dp"
+            android:id="@+id/name"
+            android:text="USER"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:textColor="#135589" />
+
+    </RelativeLayout>
+
+
+
+    <!-- 메인 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main2" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="155.5dp"
+
+            android:text="Your BMI"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="7pt"
+            android:textColor="#2a93d5" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="155.5dp"
+
+            android:text="29.5"
+            android:id="@+id/BMI"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="12pt"
+            android:textColor="#135589" />
+
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="75.5dp"
+            android:background="@drawable/icontext" />
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="85.5dp"
+
+            android:id="@+id/food_tv"
+
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="6pt"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="155.5dp"
+            android:background="@drawable/iconhuman" />
+
+
+
+    </RelativeLayout>
+
+
+
+    <!--  하단  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:background="#135589"
+        >
+
+
+        <ImageButton
+            android:id="@+id/cal"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/iconcalendar" />
+
+        <ImageButton
+            android:id="@+id/food"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="115dp"
+            android:background="@drawable/iconfood" />
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="188dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/iconhome" />
+
+        <ImageButton
+            android:id="@+id/health"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="265dp"
+            android:background="@drawable/iconhealth" />
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/iconsettings" />
+
+
+    </RelativeLayout>
+</LinearLayout>
